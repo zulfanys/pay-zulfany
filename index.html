@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zulfany Payment</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>.fadeInDown{animation:fadeInDown 1s}.fadeInUp{animation:fadeInUp 1s}@keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }@keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1Zt1XmKeM2QWfGISD7z2fZljqafvPXdnnCxP8I" crossorigin="anonymous">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+<div class="container mx-auto px-4 py-8 max-w-md">
+<div class="profile text-center mb-10">
+<img src="profile.png" alt="Your Photo Profile" class="w-24 h-24 rounded-full mx-auto fadeInDown">
+<h1 class="text-2xl font-semibold mt-2 fadeInDown">Dyan Zulfany</h1>
+<p class="text-gray-400 fadeInDown">Card and E-wallet</p>
+</div>
+
+<div class="btn-bank bg-gray-700 p-4 rounded-lg mb-4 text-left cursor-pointer fadeInUp" onclick="copyToClipboard('1850005559973')">
+<strong class="text-lg">Bank Mandiri</strong><br>
+Card number: <span id="rekA">1850005559973</span><br>
+Name: Dyan Zulfany 
+<span class="copy text-white float-right" title="Copy Account Number"><i class="fas fa-copy"></i></span>
+</div>
+
+<div class="btn-bank bg-gray-700 p-4 rounded-lg mb-4 text-left cursor-pointer fadeInUp" onclick="copyToClipboard('1221568422')">
+<strong class="text-lg">Bank BCA</strong><br>
+Card number: <span id="rekB">1221568422</span><br>
+Name: Dyan Zulfany 
+<span class="copy text-white float-right" title="Copy Account Number"><i class="fas fa-copy"></i></span>
+</div>
+
+<div class="btn-bank bg-gray-700 p-4 rounded-lg mb-4 text-left cursor-pointer fadeInUp" onclick="copyToClipboard('901847307673')">
+<strong class="text-lg">Seabank</strong><br>
+Card number: <span id="rekB">901847307673</span><br>
+Name: Dyan Zulfany
+<span class="copy text-white float-right" title="Copy Account Number"><i class="fas fa-copy"></i></span>
+</div>
+
+
+<div class="btn-bank bg-gray-700 p-4 rounded-lg mb-4 text-left cursor-pointer fadeInUp" onclick="copyToClipboard('085795117021')">
+<strong class="text-lg">Dana & Shopee</strong><br>
+Phone number: <span id="rekC">085795117021</span><br>
+Name: Dyan Zulfany 
+<span class="copy text-white float-right" title="Copy Account Number"><i class="fas fa-copy"></i></span>
+</div>
+
+</div>
+</div>
+<footer class="bg-gray-700 text-white p-4 text-center">
+<h3 class="text-xl mb-4">Follow me!</h3>
+<a href="https://www.linkedin.com/in/xExample" target="_blank" class="text-white hover:text-blue-400 mx-2"><i class="fab fa-linkedin"></i></a>
+<a href="https://s.id/Example" target="_blank" class="text-white hover:text-blue-400 mx-2"><i class="fa fa-globe"></i></a>
+<a href="https://www.github.com/xExample" target="_blank" class="text-white hover:text-blue-400 mx-2"><i class="fab fa-github"></i></a>
+<a href="https://www.gitlab.com/xExample" target="_blank" class="text-white hover:text-blue-400 mx-2"><i class="fab fa-gitlab"></i></a>
+</footer>
+<div class="footer text-center text-gray-400 mt-8">
+Feel free to reach me on <a href="mailto:zulfany.dy@gmail.com" class="text-gray-400">zulfany.dy@gmail.com</a>.<br/>
+</div>
+</div>
+<script>function copyToClipboard(text){const el=document.createElement('textarea');el.value=text;document.body.appendChild(el);el.select();document.execCommand('copy');document.body.removeChild(el);alert('Account number successfully copied: '+text);}</script>
+<br/>
+</body>
+</html>
